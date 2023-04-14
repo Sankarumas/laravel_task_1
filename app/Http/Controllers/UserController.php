@@ -73,4 +73,6 @@ class UserController extends Controller
         User::destroy($id);
         return redirect('user')->with('flash_message', 'User deleted Successfully!');
     }
+
+    
 }

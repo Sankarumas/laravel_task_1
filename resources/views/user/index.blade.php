@@ -7,6 +7,7 @@
                     <div class="card-header">
                         <h2>Laravel 10 CRUD </h2>
                     </div>
+                    <h2> Hello {{auth()->user()->name}}!!</h2>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table">
@@ -38,6 +39,9 @@
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                    <div class="card-footer">
+                    <a href= "logout">logout</a>
                     </div>
                 </div>
             </div>

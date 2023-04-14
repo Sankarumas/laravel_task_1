@@ -27,4 +27,4 @@ Route::view('login', 'auth.login')->middleware('guest')->name('login');
 Route::post('authenticate', [LoginController::class, 'authenticate']);
 Route::get('logout', [LoginController::class, 'logout']);
 
-Route::resource('/user', UserController::class);
+Route::resource('/user', UserController::class)->middleware('auth');
